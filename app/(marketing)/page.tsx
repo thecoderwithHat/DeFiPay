@@ -166,33 +166,34 @@ const HeroSection: React.FC = () => {
         pt="20"
         features={[
           {
-            title: 'Tokenized Real Estate Ownership',
+            title: 'Blockchain-Powered Transactions',
             icon: FiSmile,
-            description: 'Each token corresponds to a specific percentage of the property.',
+            description:
+              'Leverage the security and transparency of Aptos blockchain for every property purchase, ensuring trust and reliability.',
             iconPosition: 'left',
             delay: 0.6,
           },
           {
-            title: 'Marketplace',
+            title: 'Customizable Payment Flows',
             icon: FiSliders,
             description:
-              'Integrate price discovery, bidding systems, and transaction history.',
+              'Fully customize the property payment process to match your brand, with seamless integration to Aptos blockchain for smooth transactions.',
             iconPosition: 'left',
             delay: 0.8,
           },
           {
-            title: 'Efficiency',
+            title: 'Dynamic Property Listings',
             icon: FiGrid,
             description:
-              'Eliminates intermediaries (e.g., brokers), lowering costs and speeding up transactions.',
+              'Easily create and manage property listings on the Aptos blockchain, allowing for secure and decentralized transactions.',
             iconPosition: 'left',
             delay: 1,
           },
           {
-            title: 'Global Access',
+            title: 'Fast and Secure Payments',
             icon: FiThumbsUp,
             description:
-              'Users worldwide can invest in properties without traditional geographic restrictions.',
+              'With Aptos blockchain, enjoy faster, low-cost, and highly secure property payments, optimizing the buying experience for users.',
             iconPosition: 'left',
             delay: 1.1,
           },
@@ -250,9 +251,10 @@ const HighlightsSection = () => {
       </HighlightsItem>
       <HighlightsItem title="Solid foundations">
         <Text color="muted" fontSize="lg">
-          We don&apos;t like to re-invent the wheel, neither should you. We
-          selected the most productive and established tools in the scene and
-          build Saas UI on top of it.
+          We don’t believe in reinventing the wheel, and neither should you.
+          We’ve built our property buying platform on the powerful and secure
+          Aptos blockchain, using the most reliable tools in the industry to
+          ensure a seamless and efficient experience.
         </Text>
       </HighlightsItem>
       <HighlightsTestimonialItem
@@ -261,37 +263,41 @@ const HighlightsSection = () => {
         avatar="/static/images/avatar.jpg"
         gradient={['pink.200', 'purple.500']}
       >
-        “Saas UI helped us set up a beautiful modern UI in no time. It saved us
-        hundreds of hours in development time and allowed us to focus on
-        business logic for our specific use-case from the start.”
+        "Using this app built on Aptos, we were
+        able to streamline our transactions and ensure secure property transfers
+        with ease. It saved us countless hours in manual processes and allowed
+        us to focus on enhancing the user experience while ensuring smooth and
+        transparent property deals from start to finish."
       </HighlightsTestimonialItem>
       <HighlightsItem
         colSpan={[1, null, 2]}
         title="Start your next idea two steps ahead"
       >
         <Text color="muted" fontSize="lg">
-          We took care of all your basic frontend needs, so you can start
-          building functionality that makes your product unique.
+        We’ve handled all your blockchain integration and property management needs, so you can focus on creating unique features that enhance the property buying and selling experience.
         </Text>
         <Wrap mt="8">
           {[
-            'authentication',
-            'navigation',
-            'crud',
-            'settings',
-            'multi-tenancy',
-            'layouts',
-            'billing',
-            'a11y testing',
-            'server-side rendering',
-            'documentation',
-            'onboarding',
-            'storybooks',
-            'theming',
-            'upselling',
-            'unit testing',
-            'feature flags',
-            'responsiveness',
+           "authentication",
+           "secure transactions",
+           "smart contract integration",
+           "property listings",
+           "transaction history",
+           "payment processing (Aptos Blockchain)",
+           "real-time blockchain data",
+           "property ownership verification",
+           "blockchain wallet management",
+           "multi-currency support (for property payments)",
+           "property search & filters",
+           "smart contract automation",
+           "user onboarding (blockchain focused)",
+           "blockchain-based property transfers",
+           "transaction analytics",
+           "legal compliance (blockchain)",
+           "mobile responsiveness",
+           "property deal notifications",
+           "multi-language support",
+           "decentralized identity (DID) integration"
           ].map((value) => (
             <Tag
               key={value}
@@ -398,11 +404,13 @@ const FeaturesSection = () => {
           description: (
             <>
               All code is organized into high-performance packages in a{' '}
-              <Link href="https://turborepo.com">Turborepo</Link>, providing complete control to tailor your property payment system to your unique needs.
+              <Link href="https://turborepo.com">Turborepo</Link>, providing
+              complete control to tailor your property payment system to your
+              unique needs.
             </>
           ),
           variant: 'inline',
-        },        
+        },
       ]}
     />
   )
