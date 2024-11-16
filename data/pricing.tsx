@@ -1,36 +1,36 @@
-import { HStack, Text } from '@chakra-ui/react'
+import { HStack, Text } from '@chakra-ui/react';
 
 export default {
-  title: 'Pricing for every stage',
+  title: 'Properties',
   description:
-    'Pay once and get life-time access to our high quality components.',
+    'Discover the perfect set of properties to elevate your blockchain payment experience..',
   plans: [
     {
-      id: 'oss',
-      title: 'Open Source',
-      description: 'Basic compoents, perfect to get started.',
+      id: 'basic',
+      title: 'Basic Access',
+      description: 'Essential features to get started with blockchain payments.',
       price: 'Free',
       features: [
         {
           title: 'MIT License',
         },
         {
-          title: 'Authentication (Clerk/Supabase/Magic)',
+          title: 'Authentication Support (Clerk/Supabase/Magic)',
         },
         {
-          title: 'Form (react-hook-form)',
+          title: 'Simple Payment Processing',
         },
         {
-          title: 'Modals manager',
+          title: 'Web3 Wallet Integration',
         },
         {
-          title: 'Hotkeys',
+          title: 'Basic Analytics Dashboard',
         },
         {
-          title: 'Web3 components',
+          title: 'Community Support',
         },
         {
-          title: 'And much more...',
+          title: 'And more...',
         },
       ],
       action: {
@@ -38,47 +38,49 @@ export default {
       },
     },
     {
-      id: 'bootstrap',
-      title: 'Bootstrap',
-      description: 'Complete frontend stack for bootstrappers and small teams.',
+      id: 'team',
+      title: 'Team Access',
+      description:
+        'Comprehensive features for small teams scaling their payment solutions.',
       price: 'Free',
-      isRecommended: true,
+      isRecommended: false,
       features: [
         {
-          title: 'One project',
+          title: 'Support for Multiple Projects',
         },
         {
-          title: 'One developer',
+          title: 'Multi-Developer Collaboration',
         },
         {
-          title: 'Advanced components',
+          title: 'Advanced Analytics and Reporting',
         },
         {
-          title: 'Multiple themes',
+          title: 'Customizable Themes',
         },
         {
-          title: 'Next.js and Electron boilerplates',
+          title: 'Next.js and Blockchain Boilerplates',
         },
         {
-          title: 'Private discord community',
+          title: 'Private Support Community',
         },
         {
-          title: '1 year of updates',
+          title: '1 Year of Updates',
         },
         null,
-        {
-          title: 'Private beta access',
-          iconColor: 'green.500',
-        },
+        // {
+        //   title: 'Priority Feature Requests',
+        //   iconColor: 'green.500',
+        // },
       ],
       action: {
-        href: 'https://appulse.gumroad.com/l/saas-ui-pro-pre-order?variant=Single%20license',
+        href: '#',
       },
     },
     {
-      id: 'startup',
-      title: 'Startup',
-      description: 'Unlimited license for growing teams.',
+      id: 'enterprise',
+      title: 'Enterprise Access',
+      description:
+        'Unlimited access and premium features for large teams and enterprises.',
       price: (
         <HStack>
           <Text textDecoration="line-through" fontSize="sm" color="gray.400">
@@ -89,26 +91,26 @@ export default {
       ),
       features: [
         {
-          title: 'Unlimited projects',
+          title: 'Unlimited Projects',
         },
         {
-          title: 'Unlimited developers',
+          title: 'Unlimited Developers',
         },
         {
-          title: '1 year of updates',
+          title: 'Lifetime Updates',
         },
         {
-          title: 'Everything from Bootstrap',
+          title: 'Everything from Team Access',
         },
         null,
-        {
-          title: 'Private beta access',
-          iconColor: 'green.500',
-        },
+        // {
+        //   title: 'Dedicated Onboarding and Support',
+        //   iconColor: 'green.500',
+        // },
       ],
       action: {
-        href: 'https://appulse.gumroad.com/l/saas-ui-pro-pre-order?variant=Unlimited%20license',
+        href: '#',
       },
     },
   ],
-}
+};

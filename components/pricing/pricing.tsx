@@ -145,9 +145,9 @@ const PricingBox: React.FC<PricingBoxProps> = (props) => {
         {title}
       </Heading>
       <Box color="muted">{description}</Box>
-      <Box fontSize="2xl" fontWeight="bold" py="4">
+      {/* <Box fontSize="2xl" fontWeight="bold" py="4">
         {price}
-      </Box>
+      </Box> */}
       <VStack align="stretch" justifyContent="stretch" spacing="4" flex="1">
         {children}
       </VStack>

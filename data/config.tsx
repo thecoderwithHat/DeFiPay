@@ -31,11 +31,11 @@ const siteConfig = {
       //   label: 'Login',
       //   href: '/login',
       // },
-      {
-        label: 'Connect Wallet',
-        href: '/signup',
-        variant: 'primary',
-      },
+      // {
+      //   label: 'Connect Wallet',
+      //   href: '/signup',
+      //   variant: 'primary',
+      // },
     ],
   },
   footer: {
