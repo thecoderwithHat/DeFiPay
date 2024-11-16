@@ -22,6 +22,9 @@ const nextConfig = {
     })
     return config
   },
+  images: {
+    domains: ['images.unsplash.com', 'plus.unsplash.com'], // Add 'plus.unsplash.com' here
+  },
 }
 
 export default nextConfig
