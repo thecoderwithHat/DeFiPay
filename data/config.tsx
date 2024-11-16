@@ -65,27 +65,25 @@ const siteConfig = {
     features: [
       {
         icon: FiCheck,
-        title: 'Accessible',
-        description: 'All components strictly follow WAI-ARIA standards.',
+        title: 'Blockchain-Backed Transactions',
+        description: 'All property transactions are secured and validated through the Aptos blockchain, ensuring transparency and trust for every purchase.',
       },
       {
         icon: FiCheck,
-        title: 'Themable',
-        description:
-          'Fully customize all components to your brand with theme support and style props.',
+        title: 'Customizable Payment Flows',
+        description: 'Tailor the payment process to your brand’s needs with full theme customization, while leveraging Aptos blockchain for seamless property payments.',
       },
       {
         icon: FiCheck,
-        title: 'Composable',
-        description:
-          'Compose components to fit your needs and mix them together to create new ones.',
+        title: 'Composable Property Listings',
+        description: 'Create dynamic property listings that integrate directly with the Aptos blockchain for secure and efficient payments, customizable to suit different property types.',
       },
       {
         icon: FiCheck,
-        title: 'Productive',
-        description:
-          'Designed to reduce boilerplate and fully typed, build your product at speed.',
+        title: 'Fast and Secure Payments',
+        description: 'Built for efficiency, this solution uses the Aptos blockchain to process property payments quickly, securely, and with low transaction fees.',
       },
+      
     ],
   },
 }
