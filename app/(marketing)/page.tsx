@@ -94,14 +94,14 @@ const HeroSection: React.FC = () => {
             px="0"
             title={
               <FallInPlace>
-                Crypto Payment
-                <Br /> made Easier
+                Seamless Property Transactions
+                <Br /> Powered by Aptos
               </FallInPlace>
             }
             description={
               <FallInPlace delay={0.4} fontWeight="medium">
-                Buy, store, swap and <Em>Spend Cryptocurrency</Em>
-                <Br /> all in one app <Br />{' '}
+                Buy, Sell, and Manage <Em>Properties</Em>
+                <Br /> Securely with Blockchain <Br />{' '}
                 {/* build intuitive SaaS products with speed. */}
               </FallInPlace>
             }
@@ -320,16 +320,16 @@ const FeaturesSection = () => {
           textAlign="left"
           as="p"
         >
-          Beyond Standard <br/> Payment Solutions.
+          Redefining <br /> Property Payments with Blockchain
         </Heading>
       }
       description={
         <>
-          BlockchainPay Pro offers everything you need to build secure and
-          modern payment solutions.
+          Get everything you need to revolutionize property transactions.
           <br />
-          Use it as a template for your next blockchain-powered app or the
-          foundation for your custom transaction system
+          Use it as the backbone for your next blockchain-powered property app
+          or as the foundation for a secure and modern real estate payment
+          system.
         </>
       }
       align="left"
@@ -337,74 +337,72 @@ const FeaturesSection = () => {
       iconSize={4}
       features={[
         {
-          title: 'Secure Transactions.',
+          title: 'Secure Property Transactions.',
           icon: FiBox,
           description:
-            'Seamless person-to-person payments with end-to-end encryption on the blockchain, ensuring your transactions remain private and secure.',
+            'Effortless property payments with end-to-end encryption on the blockchain, ensuring every transaction is private, secure, and immutable.',
           variant: 'inline',
         },
         {
-          title: 'Quick Start Kits.',
+          title: 'Quick Start Property Kits.',
           icon: FiLock,
           description:
-            'Example integrations for Next.js and TypeScript. Pre-built templates for payment flows, authentication, and blockchain connectivity to get started quickly.',
+            'Pre-built templates for property transactions, blockchain authentication, and seamless payment flows for fast integration with Next.js and TypeScript.',
           variant: 'inline',
         },
         {
-          title: 'Comprehensive Documentation.',
+          title: 'Comprehensive Blockchain Documentation.',
           icon: FiSearch,
           description:
-            'Detailed guides and API references to help you understand and implement blockchain payments effectively.',
+            'In-depth guides and API references to help you understand and implement blockchain-based property payments and real estate transactions.',
           variant: 'inline',
         },
         {
-          title: 'User Onboarding.',
+          title: 'Property Onboarding.',
           icon: FiUserPlus,
           description:
-            'Effortlessly onboard users with guided flows, ensuring they can set up wallets and start making payments in minutes.',
+            'Simplify property transactions with guided user flows, enabling wallet setup and property payments in just minutes.',
           variant: 'inline',
         },
         {
-          title: 'Payment Flags.',
+          title: 'Property Payment Flags.',
           icon: FiFlag,
           description:
-            'Enable payment toggles for different currencies or transaction modes. Seamlessly integrate with blockchain networks for dynamic configuration.',
+            'Manage property payment toggles for various currencies and transaction modes. Easily integrate with blockchain networks for flexible configuration.',
           variant: 'inline',
         },
         {
-          title: 'Transaction Insights.',
+          title: 'Transaction Insights for Properties.',
           icon: FiTrendingUp,
           description:
-            'Built-in analytics and visualization tools for tracking transaction trends and payment flows.',
+            'Built-in analytics to track trends in property transactions, payment flows, and user engagement, offering valuable insights into real estate activity.',
           variant: 'inline',
         },
         {
-          title: 'Customizable Themes.',
+          title: 'Customizable Themes for Real Estate Apps.',
           icon: FiToggleLeft,
           description:
-            'Multiple themes with light and dark mode support, designed for modern payment applications.',
+            'Multiple themes designed for property dealing apps with support for light and dark modes, offering a modern, user-friendly experience.',
           variant: 'inline',
         },
         {
-          title: 'Code Generators.',
+          title: 'Blockchain Code Generators.',
           icon: FiTerminal,
           description:
-            'Generate boilerplate code for blockchain interactions and payment flows while maintaining scalability and quality.',
+            'Generate scalable, high-quality code for blockchain-based property transactions and payment flows, ensuring efficient development of real estate apps.',
           variant: 'inline',
         },
         {
-          title: 'Blockchain Monorepo.',
+          title: 'Blockchain Property Monorepo.',
           icon: FiCode,
           description: (
             <>
               All code is organized into high-performance packages in a{' '}
-              <Link href="https://turborepo.com">Turborepo</Link>, giving you
-              complete control and flexibility to tailor the app to your
-              specific needs.
+              <Link href="https://turborepo.com">Turborepo</Link>, providing complete control to tailor your property payment system to your unique needs.
             </>
           ),
           variant: 'inline',
-        },
+        },        
       ]}
     />
   )
