@@ -263,11 +263,11 @@ const HighlightsSection = () => {
         avatar="/static/images/avatar.jpg"
         gradient={['pink.200', 'purple.500']}
       >
-        ' "Using this app built on Aptos, we were
+        Using this app built on Aptos, we were
         able to streamline our transactions and ensure secure property transfers
         with ease. It saved us countless hours in manual processes and allowed
         us to focus on enhancing the user experience while ensuring smooth and
-        transparent property deals from start to finish." '
+        transparent property deals from start to finish.
       </HighlightsTestimonialItem>
       <HighlightsItem
         colSpan={[1, null, 2]}
