@@ -3,6 +3,7 @@ import {
   HStack,
   Heading,
   Icon,
+  Image,
   SimpleGrid,
   StackProps,
   Text,
@@ -24,8 +25,10 @@ export interface PricingPlan {
   title: React.ReactNode
   description: React.ReactNode
   price: React.ReactNode
+  imageSrc?: string // Add image source
   features: Array<PricingFeatureProps | null>
-  action: ButtonLinkProps & { label?: string }
+  action: ButtonLinkProps & { label?: string } // First button
+  secondaryAction?: ButtonLinkProps & { label?: string } // Second button
   isRecommended?: boolean
 }
 
@@ -50,6 +53,9 @@ export const Pricing: React.FC<PricingProps> = (props) => {
               title={plan.title}
               description={plan.description}
               price={plan.price}
+              imageSrc={plan.imageSrc} // Pass imageSrc to PricingBox
+              action={plan.action} // Pass primary action
+              secondaryAction={plan.secondaryAction} // Pass secondary action
               sx={
                 plan.isRecommended
                   ? {
@@ -71,9 +77,6 @@ export const Pricing: React.FC<PricingProps> = (props) => {
                   ),
                 )}
               </PricingFeatures>
-              <ButtonLink colorScheme="primary" {...plan.action}>
-                {plan.action.label || 'Sign Up'}
-              </ButtonLink>
             </PricingBox>
           ))}
         </SimpleGrid>
@@ -121,10 +124,13 @@ export interface PricingBoxProps extends Omit<StackProps, 'title'> {
   title: React.ReactNode
   description: React.ReactNode
   price: React.ReactNode
+  imageSrc?: string // Add image source prop
+  action: ButtonLinkProps & { label?: string } // Primary button
+  secondaryAction?: ButtonLinkProps & { label?: string } // Secondary button
 }
 
 const PricingBox: React.FC<PricingBoxProps> = (props) => {
-  const { title, description, price, children, ...rest } = props
+  const { title, description, price, imageSrc, action, secondaryAction, children, ...rest } = props
   return (
     <VStack
       zIndex="2"
@@ -141,16 +147,34 @@ const PricingBox: React.FC<PricingBoxProps> = (props) => {
       }}
       {...rest}
     >
+      {/* Image Section */}
+      {imageSrc && (
+        <Box mb="4">
+          <Image src={imageSrc} alt={`${title}`} borderRadius="md" />
+        </Box>
+      )}
+
       <Heading as="h3" size="md" fontWeight="bold" fontSize="lg" mb="2">
         {title}
       </Heading>
       <Box color="muted">{description}</Box>
-      {/* <Box fontSize="2xl" fontWeight="bold" py="4">
+      <Box fontSize="2xl" fontWeight="bold" py="4">
         {price}
-      </Box> */}
+      </Box>
       <VStack align="stretch" justifyContent="stretch" spacing="4" flex="1">
         {children}
       </VStack>
+
+      <HStack justifyContent="space-between" spacing="4" mt="4">
+        <ButtonLink colorScheme="primary" {...action}>
+          {action.label || 'Invest Now'}
+        </ButtonLink>
+        {secondaryAction && (
+          <ButtonLink colorScheme="gray" {...secondaryAction}>
+            {secondaryAction.label || 'Learn More'}
+          </ButtonLink>
+        )}
+      </HStack>
     </VStack>
   )
 }

@@ -6,28 +6,29 @@ export default {
     "Discover the perfect set of properties to elevate your blockchain-powered property payment experience.",
   plans: [
     {
-      id: 'starter',
-      title: 'Starter Access',
+      id: 'prop1',
+      title: '5 BHK Flat',
       description: 'Essential features to get started with blockchain property payments.',
-      price: 'Free',
+      price: '50 BTC',
+      imageSrc:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkyo6Pzg_B1UXn7y5IM2UetS3YAf-R0khNnw&s',
       features: [
         {
-          title: 'MIT License',
+          title: 'Power Backup',
         },
         {
-          title: 'Blockchain Property Transaction Support',
+          title: 'Lift',
         },
         {
-          title: 'Property Payment Processing',
+          title: 'Rain-water Harvesting',
         },
         {
-          title: 'Web3 Wallet Integration',
+          title: 'Vaastu Compliant',
         },
         {
           title: 'Basic Analytics for Property Payments',
         },
         {
-          title: 'Community Support',
+          title: 'Thriving Community ',
         },
         {
           title: 'And more...',
@@ -36,13 +37,17 @@ export default {
       action: {
         href: '#',
       },
+      secondaryAction: {
+        href: '#'
+      }
     },
     {
-      id: 'business',
-      title: 'Business Access',
+      id: 'prop2',
+      title: '2 BHK Flat',
       description:
         'Comprehensive features for teams scaling their blockchain property payment solutions.',
-      price: 'Free',
+      price: '25 BTC',
+      imageSrc:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkyo6Pzg_B1UXn7y5IM2UetS3YAf-R0khNnw&s',
       isRecommended: true,
       features: [
         {
@@ -71,18 +76,23 @@ export default {
       action: {
         href: 'https://appulse.gumroad.com/l/saas-ui-pro-pre-order?variant=Single%20license',
       },
+      secondaryAction: {
+        href: '#'
+      }
+
     },
     {
-      id: 'premium',
-      title: 'Premium Access',
+      id: 'prop3',
+      title: '300 Sq yard Villa',
       description:
         'Unlimited access and premium features for large teams and enterprises in the property payments sector.',
+        imageSrc:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkyo6Pzg_B1UXn7y5IM2UetS3YAf-R0khNnw&s',
       price: (
         <HStack>
           <Text textDecoration="line-through" fontSize="sm" color="gray.400">
-            €999,-
+            35 BTC,-
           </Text>
-          <Text>€499,-</Text>
+          <Text>30 BTC</Text>
         </HStack>
       ),
       features: [
@@ -103,6 +113,9 @@ export default {
       action: {
         href: 'https://appulse.gumroad.com/l/saas-ui-pro-pre-order?variant=Single%20license',
       },
+      secondaryAction: {
+        href: '#'
+      }
     },
   ],
 };
