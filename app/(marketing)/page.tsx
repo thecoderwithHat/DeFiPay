@@ -94,7 +94,7 @@ const HeroSection: React.FC = () => {
             px="0"
             title={
               <FallInPlace>
-                Crypto Payment 
+                Crypto Payment
                 <Br /> made Easier
               </FallInPlace>
             }
@@ -107,7 +107,6 @@ const HeroSection: React.FC = () => {
             }
           >
             <FallInPlace delay={0.8}>
-
               <ButtonGroup spacing={4} alignItems="center">
                 <ButtonLink colorScheme="primary" size="lg" href="/signup">
                   Connect Wallet
@@ -321,16 +320,16 @@ const FeaturesSection = () => {
           textAlign="left"
           as="p"
         >
-          Not your standard
-          <Br /> dashboard template.
+          Beyond Standard <br/> Payment Solutions.
         </Heading>
       }
       description={
         <>
-          Saas UI Pro includes everything you need to build modern frontends.
-          <Br />
-          Use it as a template for your next product or foundation for your
-          design system.
+          BlockchainPay Pro offers everything you need to build secure and
+          modern payment solutions.
+          <br />
+          Use it as a template for your next blockchain-powered app or the
+          foundation for your custom transaction system
         </>
       }
       align="left"
@@ -399,12 +398,13 @@ const FeaturesSection = () => {
           description: (
             <>
               All code is organized into high-performance packages in a{' '}
-              <Link href="https://turborepo.com">Turborepo</Link>, giving you complete
-              control and flexibility to tailor the app to your specific needs.
+              <Link href="https://turborepo.com">Turborepo</Link>, giving you
+              complete control and flexibility to tailor the app to your
+              specific needs.
             </>
           ),
           variant: 'inline',
-        },        
+        },
       ]}
     />
   )
