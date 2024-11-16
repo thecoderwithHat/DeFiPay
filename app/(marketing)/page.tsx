@@ -9,6 +9,7 @@ import {
   Heading,
   Icon,
   IconButton,
+  Image,
   Stack,
   Tag,
   Text,
@@ -18,7 +19,7 @@ import {
 } from '@chakra-ui/react'
 import { Br, Link } from '@saas-ui/react'
 import type { Metadata, NextPage } from 'next'
-import Image from 'next/image'
+// import Image from 'next/image'
 import {
   FiArrowRight,
   FiBox,
@@ -145,12 +146,12 @@ const HeroSection: React.FC = () => {
             <FallInPlace delay={1}>
               <Box overflow="hidden" height="100%">
                 <Image
-                  src="/static/screenshots/list.png"
-                  width={1200}
+                  src="https://images.unsplash.com/photo-1729838904523-b31bdb286cdc?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  width={1180}
                   height={762}
+                  rounded="lg"
+                  shadow="lg"
                   alt="Screenshot of a ListPage in Saas UI Pro"
-                  quality="75"
-                  priority
                 />
               </Box>
             </FallInPlace>
