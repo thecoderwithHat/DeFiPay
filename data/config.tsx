@@ -47,7 +47,7 @@ const siteConfig = {
     ),
     links: [
       {
-        href: 'mailto:hello@saas-ui.dev',
+        href: 'https://www.linkedin.com/in/krishnav-kanoi-3ba53a217/',
         label: 'Contact',
       },
       // {
