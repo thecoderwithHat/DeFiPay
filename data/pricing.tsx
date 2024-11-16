@@ -43,7 +43,7 @@ export default {
       description:
         'Comprehensive features for small teams scaling their payment solutions.',
       price: 'Free',
-      isRecommended: false,
+      isRecommended: true,
       features: [
         {
           title: 'Support for Multiple Projects',
