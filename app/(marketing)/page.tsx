@@ -73,7 +73,7 @@ const Home: NextPage = () => {
 
       <FeaturesSection />
 
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
 
       <PricingSection />
 
@@ -338,73 +338,73 @@ const FeaturesSection = () => {
       iconSize={4}
       features={[
         {
-          title: '#components.',
+          title: 'Secure Transactions.',
           icon: FiBox,
           description:
-            'All premium components are available on a private NPM registery, no more copy pasting and always up-to-date.',
+            'Seamless person-to-person payments with end-to-end encryption on the blockchain, ensuring your transactions remain private and secure.',
           variant: 'inline',
         },
         {
-          title: 'Starterkits.',
+          title: 'Quick Start Kits.',
           icon: FiLock,
           description:
-            'Example apps in Next.JS, Electron. Including authentication, billing, example pages, everything you need to get started FAST.',
+            'Example integrations for Next.js and TypeScript. Pre-built templates for payment flows, authentication, and blockchain connectivity to get started quickly.',
           variant: 'inline',
         },
         {
-          title: 'Documentation.',
+          title: 'Comprehensive Documentation.',
           icon: FiSearch,
           description:
-            'Extensively documented, including storybooks, best practices, use-cases and examples.',
+            'Detailed guides and API references to help you understand and implement blockchain payments effectively.',
           variant: 'inline',
         },
         {
-          title: 'Onboarding.',
+          title: 'User Onboarding.',
           icon: FiUserPlus,
           description:
-            'Add user onboarding flows, like tours, hints and inline documentation without breaking a sweat.',
+            'Effortlessly onboard users with guided flows, ensuring they can set up wallets and start making payments in minutes.',
           variant: 'inline',
         },
         {
-          title: 'Feature flags.',
+          title: 'Payment Flags.',
           icon: FiFlag,
           description:
-            "Implement feature toggles for your billing plans with easy to use hooks. Connect Flagsmith, or other remote config services once you're ready.",
+            'Enable payment toggles for different currencies or transaction modes. Seamlessly integrate with blockchain networks for dynamic configuration.',
           variant: 'inline',
         },
         {
-          title: 'Upselling.',
+          title: 'Transaction Insights.',
           icon: FiTrendingUp,
           description:
-            '#components and hooks for upgrade flows designed to make upgrading inside your app frictionless.',
+            'Built-in analytics and visualization tools for tracking transaction trends and payment flows.',
           variant: 'inline',
         },
         {
-          title: 'Themes.',
+          title: 'Customizable Themes.',
           icon: FiToggleLeft,
           description:
-            'Includes multiple themes with darkmode support, always have the perfect starting point for your next project.',
+            'Multiple themes with light and dark mode support, designed for modern payment applications.',
           variant: 'inline',
         },
         {
-          title: 'Generators.',
+          title: 'Code Generators.',
           icon: FiTerminal,
           description:
-            'Extend your design system while maintaininig code quality and consistency with built-in generators.',
+            'Generate boilerplate code for blockchain interactions and payment flows while maintaining scalability and quality.',
           variant: 'inline',
         },
         {
-          title: 'Monorepo.',
+          title: 'Blockchain Monorepo.',
           icon: FiCode,
           description: (
             <>
-              All code is available as packages in a high-performance{' '}
-              <Link href="https://turborepo.com">Turborepo</Link>, you have full
-              control to modify and adjust it to your workflow.
+              All code is organized into high-performance packages in a{' '}
+              <Link href="https://turborepo.com">Turborepo</Link>, giving you complete
+              control and flexibility to tailor the app to your specific needs.
             </>
           ),
           variant: 'inline',
-        },
+        },        
       ]}
     />
   )

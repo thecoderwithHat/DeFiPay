@@ -9,7 +9,7 @@ const siteConfig = {
   logo: Logo,
   seo: {
     title: 'Saas UI',
-    description: 'The React component library for startups',
+    description: 'Empowering startups with the ultimate React toolkit for seamless development',
   } as NextSeoProps,
   termsUrl: '#',
   privacyUrl: '#',
@@ -27,10 +27,10 @@ const siteConfig = {
         id: 'faq',
         label: 'FAQ',
       },
-      {
-        label: 'Login',
-        href: '/login',
-      },
+      // {
+      //   label: 'Login',
+      //   href: '/login',
+      // },
       {
         label: 'Connect Wallet',
         href: '/signup',
@@ -42,7 +42,7 @@ const siteConfig = {
     copyright: (
       <>
         Built by{' '}
-        <Link href="https://twitter.com/Pagebakers">Eelco Wiersma</Link>
+        <Link href="https://twitter.com/Pagebakers">MatrixUnfolded</Link>
       </>
     ),
     links: [
@@ -50,12 +50,12 @@ const siteConfig = {
         href: 'mailto:hello@saas-ui.dev',
         label: 'Contact',
       },
+      // {
+      //   href: 'https://twitter.com/saas_js',
+      //   label: <FaTwitter size="14" />,
+      // },
       {
-        href: 'https://twitter.com/saas_js',
-        label: <FaTwitter size="14" />,
-      },
-      {
-        href: 'https://github.com/saas-js/saas-ui',
+        href: 'https://github.com/thecoderwithHat/DeFiPay',
         label: <FaGithub size="14" />,
       },
     ],
