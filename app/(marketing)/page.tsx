@@ -59,18 +59,20 @@ import { Em } from '#components/typography'
 import faq from '#data/faq'
 import pricing from '#data/pricing'
 import testimonials from '#data/testimonials'
+import useWalletConnect from '#hooks/useWalletConnect'
 
 // export const meta: Metadata = {
 //   title: 'Saas UI Landingspage',
 //   description: 'Free SaaS landingspage starter kit',
 // }
 
+
 const Home: NextPage = () => {
   return (
     <Box>
       <HeroSection />
 
-      <HighlightsSection />
+      {/* <HighlightsSection /> */}
 
       <FeaturesSection />
 
@@ -83,7 +85,9 @@ const Home: NextPage = () => {
   )
 }
 
+
 const HeroSection: React.FC = () => {
+  const { connectWallet } = useWalletConnect()
   return (
     <Box position="relative" overflow="hidden">
       <BackgroundGradient height="100%" zIndex="-1" />
@@ -109,7 +113,7 @@ const HeroSection: React.FC = () => {
           >
             <FallInPlace delay={0.8}>
               <ButtonGroup spacing={4} alignItems="center">
-                <ButtonLink colorScheme="primary" size="lg" href="/signup">
+                <ButtonLink colorScheme="primary" size="lg" href="/" onClick={connectWallet}>
                   Connect Wallet
                 </ButtonLink>
                 <ButtonLink
@@ -205,116 +209,116 @@ const HeroSection: React.FC = () => {
   )
 }
 
-const HighlightsSection = () => {
-  const { value, onCopy, hasCopied } = useClipboard('yarn add @saas-ui/react')
+// const HighlightsSection = () => {
+//   const { value, onCopy, hasCopied } = useClipboard('yarn add @saas-ui/react')
 
-  return (
-    <Highlights>
-      <HighlightsItem colSpan={[1, null, 2]} title="Core components">
-        <VStack alignItems="flex-start" spacing="8">
-          <Text color="muted" fontSize="xl">
-            Get started for free with <Em>30+ open source components</Em>.
-            Including authentication screens with Clerk, Supabase and Magic.
-            Fully functional forms with React Hook Form. Data tables with React
-            Table.
-          </Text>
+//   return (
+//     <Highlights>
+//       <HighlightsItem colSpan={[1, null, 2]} title="Core components">
+//         <VStack alignItems="flex-start" spacing="8">
+//           <Text color="muted" fontSize="xl">
+//             Get started for free with <Em>30+ open source components</Em>.
+//             Including authentication screens with Clerk, Supabase and Magic.
+//             Fully functional forms with React Hook Form. Data tables with React
+//             Table.
+//           </Text>
 
-          <Flex
-            rounded="full"
-            borderWidth="1px"
-            flexDirection="row"
-            alignItems="center"
-            py="1"
-            ps="8"
-            pe="2"
-            bg="primary.900"
-            _dark={{ bg: 'gray.900' }}
-          >
-            <Box>
-              <Text color="yellow.400" display="inline">
-                yarn add
-              </Text>{' '}
-              <Text color="cyan.300" display="inline">
-                @saas-ui/react
-              </Text>
-            </Box>
-            <IconButton
-              icon={hasCopied ? <FiCheck /> : <FiCopy />}
-              aria-label="Copy install command"
-              onClick={onCopy}
-              variant="ghost"
-              ms="4"
-              isRound
-              color="white"
-            />
-          </Flex>
-        </VStack>
-      </HighlightsItem>
-      <HighlightsItem title="Solid foundations">
-        <Text color="muted" fontSize="lg">
-          We don’t believe in reinventing the wheel, and neither should you.
-          We’ve built our property buying platform on the powerful and secure
-          Aptos blockchain, using the most reliable tools in the industry to
-          ensure a seamless and efficient experience.
-        </Text>
-      </HighlightsItem>
-      <HighlightsTestimonialItem
-        name="Renata Alink"
-        description="Founder"
-        avatar="/static/images/avatar.jpg"
-        gradient={['pink.200', 'purple.500']}
-      >
-        Using this app built on Aptos, we were
-        able to streamline our transactions and ensure secure property transfers
-        with ease. It saved us countless hours in manual processes and allowed
-        us to focus on enhancing the user experience while ensuring smooth and
-        transparent property deals from start to finish.
-      </HighlightsTestimonialItem>
-      <HighlightsItem
-        colSpan={[1, null, 2]}
-        title="Start your next idea two steps ahead"
-      >
-        <Text color="muted" fontSize="lg">
-        We’ve handled all your blockchain integration and property management needs, so you can focus on creating unique features that enhance the property buying and selling experience.
-        </Text>
-        <Wrap mt="8">
-          {[
-           "authentication",
-           "secure transactions",
-           "smart contract integration",
-           "property listings",
-           "transaction history",
-           "payment processing (Aptos Blockchain)",
-           "real-time blockchain data",
-           "property ownership verification",
-           "blockchain wallet management",
-           "multi-currency support (for property payments)",
-           "property search & filters",
-           "smart contract automation",
-           "user onboarding (blockchain focused)",
-           "blockchain-based property transfers",
-           "transaction analytics",
-           "legal compliance (blockchain)",
-           "mobile responsiveness",
-           "property deal notifications",
-           "multi-language support",
-           "decentralized identity (DID) integration"
-          ].map((value) => (
-            <Tag
-              key={value}
-              variant="subtle"
-              colorScheme="purple"
-              rounded="full"
-              px="3"
-            >
-              {value}
-            </Tag>
-          ))}
-        </Wrap>
-      </HighlightsItem>
-    </Highlights>
-  )
-}
+//           <Flex
+//             rounded="full"
+//             borderWidth="1px"
+//             flexDirection="row"
+//             alignItems="center"
+//             py="1"
+//             ps="8"
+//             pe="2"
+//             bg="primary.900"
+//             _dark={{ bg: 'gray.900' }}
+//           >
+//             <Box>
+//               <Text color="yellow.400" display="inline">
+//                 yarn add
+//               </Text>{' '}
+//               <Text color="cyan.300" display="inline">
+//                 @saas-ui/react
+//               </Text>
+//             </Box>
+//             <IconButton
+//               icon={hasCopied ? <FiCheck /> : <FiCopy />}
+//               aria-label="Copy install command"
+//               onClick={onCopy}
+//               variant="ghost"
+//               ms="4"
+//               isRound
+//               color="white"
+//             />
+//           </Flex>
+//         </VStack>
+//       </HighlightsItem>
+//       <HighlightsItem title="Solid foundations">
+//         <Text color="muted" fontSize="lg">
+//           We don’t believe in reinventing the wheel, and neither should you.
+//           We’ve built our property buying platform on the powerful and secure
+//           Aptos blockchain, using the most reliable tools in the industry to
+//           ensure a seamless and efficient experience.
+//         </Text>
+//       </HighlightsItem>
+//       <HighlightsTestimonialItem
+//         name="MartixUnfolded"
+//         description="Team"
+//         // avatar="/static/images/avatar.jpg"
+//         gradient={['pink.200', 'purple.500']}
+//       >
+//         Using this app built on Aptos, we were
+//         able to streamline our transactions and ensure secure property transfers
+//         with ease. It saved us countless hours in manual processes and allowed
+//         us to focus on enhancing the user experience while ensuring smooth and
+//         transparent property deals from start to finish.
+//       </HighlightsTestimonialItem>
+//       <HighlightsItem
+//         colSpan={[1, null, 2]}
+//         title="Start your next idea two steps ahead"
+//       >
+//         <Text color="muted" fontSize="lg">
+//         We’ve handled all your blockchain integration and property management needs, so you can focus on creating unique features that enhance the property buying and selling experience.
+//         </Text>
+//         <Wrap mt="8">
+//           {[
+//            "authentication",
+//            "secure transactions",
+//            "smart contract integration",
+//            "property listings",
+//            "transaction history",
+//            "payment processing (Aptos Blockchain)",
+//            "real-time blockchain data",
+//            "property ownership verification",
+//            "blockchain wallet management",
+//            "multi-currency support (for property payments)",
+//            "property search & filters",
+//            "smart contract automation",
+//            "user onboarding (blockchain focused)",
+//            "blockchain-based property transfers",
+//            "transaction analytics",
+//            "legal compliance (blockchain)",
+//            "mobile responsiveness",
+//            "property deal notifications",
+//            "multi-language support",
+//            "decentralized identity (DID) integration"
+//           ].map((value) => (
+//             <Tag
+//               key={value}
+//               variant="subtle"
+//               colorScheme="purple"
+//               rounded="full"
+//               px="3"
+//             >
+//               {value}
+//             </Tag>
+//           ))}
+//         </Wrap>
+//       </HighlightsItem>
+//     </Highlights>
+//   )
+// }
 
 const FeaturesSection = () => {
   return (

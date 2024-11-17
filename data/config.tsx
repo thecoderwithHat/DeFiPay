@@ -33,7 +33,7 @@ const siteConfig = {
       // },
       {
         label: 'Connect Wallet',
-        href: '/signup',
+        href: '/',
         variant: 'primary',
       },
     ],

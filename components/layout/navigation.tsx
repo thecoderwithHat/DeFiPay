@@ -11,8 +11,12 @@ import { NavLink } from '#components/nav-link'
 import siteConfig from '#data/config'
 
 import ThemeToggle from './theme-toggle'
+import useWalletConnect from '#hooks/useWalletConnect'
+
 
 const Navigation: React.FC = () => {
+  const { connectWallet } = useWalletConnect()
+
   const mobileNav = useDisclosure()
   const router = useRouter()
   const path = usePathname()

@@ -10,6 +10,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aptos-labs/ts-sdk": "^1.33.0",
+    "@aptos-labs/wallet-adapter-react": "^3.7.4",
     "@chakra-ui/react": "^2.10.1",
     "@chakra-ui/theme-tools": "^2.2.5",
     "@emotion/react": "^11.13.3",
