@@ -4,7 +4,7 @@
 
 |Name|Link|
 |------|------------------|
-|Website (devnet)|[https://options-factory.net](https://options-factory.net)|
+
 |Contract (devnet)|[0x2eb74655638e224b68b554bdc86efb22ad3f54fdc87602c2dd7bc6afac95fb03](https://explorer.aptoslabs.com/account/0x2eb74655638e224b68b554bdc86efb22ad3f54fdc87602c2dd7bc6afac95fb03?network=devnet)|
 
 ## Introduction
