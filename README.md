@@ -4,7 +4,7 @@
 
 |Name|Link|
 |------|------------------|
-
+|Video Link| (https://drive.google.com/file/d/1EmoHpSEYShrC-D2jJblqCULsH4Ugl4L7/view?usp=drive_link)
 |Contract (devnet)|[0x2eb74655638e224b68b554bdc86efb22ad3f54fdc87602c2dd7bc6afac95fb03](https://explorer.aptoslabs.com/account/0x2eb74655638e224b68b554bdc86efb22ad3f54fdc87602c2dd7bc6afac95fb03?network=devnet)|
 
 ## Introduction
